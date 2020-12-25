@@ -4,7 +4,7 @@ import Login from './Login';
 
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom"; 
 import { useStateValue } from './StateProvider';
-import Dashboard from './Dashboard';
+import Header from './Header';
 
 function App() {
   const [{ user } , dispatch] = useStateValue(); 
@@ -18,7 +18,7 @@ function App() {
           <Login />
 
         ): (
-          <Dashboard />
+          <Header />
 
         )}
       </Router>
