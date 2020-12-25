@@ -33,6 +33,12 @@ function Login() {
 
     return (
         <div className="login">
+            <div className="login__container">
+                <h1 className="logincontainer__welcometext">Welcome</h1>
+                <h2 className="logincontainer__totext">to</h2>
+                <h1 className="logincontainer__mechlevelstext">MechLevels</h1>
+                <Button onClick={signIn}>Login or Sign Up with Google</Button>
+            </div>
             
 
         </div>
