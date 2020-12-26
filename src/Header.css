@@ -41,9 +41,9 @@
     align-items: flex-end; 
 }
 
-.dashboardheader__right > Button {
+.dashboardheader__right > button {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: auto;
     background-color: #F46E6E;
     color: black;
 }
