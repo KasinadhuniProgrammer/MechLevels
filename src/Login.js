@@ -1,7 +1,6 @@
 import React from 'react'; 
 import './Login.css'; 
 
-import { Button } from "@material-ui/core";
 import { auth, provider } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer"; 
@@ -40,7 +39,7 @@ function Login() {
             <div className="loginpage">
                 <center><h1 className="login__header">MechLevels</h1></center>
                 <center><h3 className="login__desc">Find compensations of Mechanical Engineers from top companies</h3></center>
-                <center><Button className="login__googlebutton" onClick={signIn}>Login/Sign up with Google</Button></center>
+                <center><button className="login__googlebutton" onClick={signIn}>Login/Sign up with Google</button></center>
 
             </div>
             <div className="explanation">

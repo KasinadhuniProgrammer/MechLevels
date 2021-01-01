@@ -21,6 +21,13 @@
     margin-top: 50px;
     margin-bottom: 5px;
     color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.login__googlebutton:hover {
+    background-color: #686CA2;
+    transition-duration: 0.5s;
 }
 
 .explanation {

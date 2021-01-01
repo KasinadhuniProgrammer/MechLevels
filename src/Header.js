@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-import { Button } from "@material-ui/core";
+
 import { auth, provider } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer"; 
@@ -22,17 +22,10 @@ function Header() {
 
     return (
         <div className="header">
-            <div className="dashboardheader__left">
-                <input placeholder="Search Company"/>
-
-            </div>
-            <div className="dashboardheader__center">
-                <h1><center>MechLevels</center></h1>
-            </div>
-            <div className="dashboardheader__right">
-                <Button onClick={signOut}>Logout</Button>
-                
-            </div>
+            <center><h1 className="mechlevels__title">MechLevels</h1></center>
+            <center><h3 className="mechlevels__desc">Find Mechanical Engineers compensations from top companies!</h3></center>
+            <button className="logoutbutton" onClick={signOut}>Logout</button>
+            <center><input className="searchinput" placeholder="search"/></center>
         </div>
     );
 
