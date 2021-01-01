@@ -6,6 +6,8 @@ import { auth, provider } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer"; 
 
+import LoginBottomer from './LoginBottomer';
+
 
 function Login() {
     const [state, dispatch] = useStateValue();
@@ -31,14 +33,26 @@ function Login() {
 
     }
 
+
+
     return (
         <div className="login">
-            <div className="login__container">
-                <h1 className="logincontainer__welcometext">Welcome</h1>
-                <h2 className="logincontainer__totext">to</h2>
-                <h1 className="logincontainer__mechlevelstext">MechLevels</h1>
-                <Button onClick={signIn}>Login/Sign Up with Google</Button>
+            <div className="loginpage">
+                <center><h1 className="login__header">MechLevels</h1></center>
+                <center><h3 className="login__desc">Find compensations of Mechanical Engineers from top companies</h3></center>
+                <center><Button className="login__googlebutton" onClick={signIn}>Login/Sign up with Google</Button></center>
+
             </div>
+            <div className="explanation">
+                <center><h1>Check out compensations from Mechanical Engineers who work at top companies such as...</h1></center>
+                <center><h1>Tesla, Ford, Google, Boeing, Microsoft, Amazon, SpaceX</h1></center>
+                <center><h1>and many more other great companies!</h1></center>
+                <center><h1 className="addcomptext">If you are a mechanical engineer, you can add your own compensation to this website also! The best thing is, it is anonymous, and no one on the website will know who you are when you keep in your compensation</h1></center>
+
+            
+            </div>
+            <LoginBottomer />
+            
             
 
         </div>

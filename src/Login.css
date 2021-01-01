@@ -1,40 +1,36 @@
-.login {
-    height: 100vh;
-    background: #f8f8f8;
-    display: grid; 
-    place-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-.login__container {
-    padding: 100px; 
-    text-align: center;
-    background-color: #2A58A0;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.logincontainer__welcometext {
+.loginpage {
+    background-color: #f27b48;
     color: white;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-.logincontainer__totext {
-    color: white;
+.login__header {
+    font-size: 50px;
 }
 
-.logincontainer__mechlevelstext {
-    color: #F7655D;
-}
-
-
-.login__container > Button {
+.login__desc {
     margin-top: 50px;
-    text-transform: inherit !important;
-    background-color: #5DF7D3 !important;
-    color: black;
 }
 
-.login__container > Button:hover {
-    background-color: black !important;
+
+.login__googlebutton {
+    background-color: #4f527e;
+    margin-top: 50px;
+    margin-bottom: 5px;
     color: white;
-    transition-duration: 0.3s;
+}
+
+.explanation {
+    font-family: 'Poppins', sans-serif;
+    background-color: #4f527e;
+    margin-top: 5px;
+    color: white;
+
+}
+
+.addcomptext {
+    margin-top: 10px;
 }
