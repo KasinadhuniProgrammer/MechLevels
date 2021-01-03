@@ -1,6 +1,6 @@
 import React from 'react'; 
 import './Login.css'; 
-
+import Typing from 'react-typing-animation';
 import { auth, provider } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer"; 
@@ -9,6 +9,28 @@ import LoginBottomer from './LoginBottomer';
 
 
 function Login() {
+
+    const AnimatedTypingComponent = () => (
+        <Typing loop={true} speed={35}>
+          <span>Tesla</span>
+          <Typing.Delay ms={1000} />
+          <Typing.Backspace count={64} speed={10}/>
+          <span>Microsoft</span>
+          <Typing.Delay ms={3000}/>
+          <Typing.Backspace count={64} speed={10} />
+          <span>Boeing</span>
+          <Typing.Delay ms={3000}/>
+          <Typing.Backspace count={64} speed={10} />
+          <span>SpaceX</span>
+          <Typing.Delay ms={3000}/>
+          <Typing.Backspace count={64} speed={10} />
+          <span>Google</span>
+          <Typing.Delay ms={3000}/>
+          <Typing.Backspace count={64} speed={10} />
+        </Typing>
+      );
+
+
     const [state, dispatch] = useStateValue();
 
     const signIn = (e) => {
@@ -39,18 +61,17 @@ function Login() {
             <div className="loginpage">
                 <center><h1 className="login__header">MechLevels</h1></center>
                 <center><h3 className="login__desc">Find compensations of Mechanical Engineers from top companies</h3></center>
-                <center><button className="login__googlebutton" onClick={signIn}>Login/Sign up with Google</button></center>
+                <center><button className="login__googlebutton" onClick={signIn}>Login with Google</button></center>
 
             </div>
             <div className="explanation">
-                <center><h1>Check out compensations from Mechanical Engineers who work at top companies such as...</h1></center>
-                <center><h1>Tesla, Ford, Google, Boeing, Microsoft, Amazon, SpaceX</h1></center>
-                <center><h1>and many more other great companies!</h1></center>
-                <center><h1 className="addcomptext">If you are a mechanical engineer, you can add your own compensation to this website also! The best thing is, it is anonymous, and no one on the website will know who you are when you keep in your compensation</h1></center>
+                <center><h2>Find compensations Mechanical Engineers earn from top companies such as...</h2></center>
+                <center><h2><AnimatedTypingComponent /></h2></center>
+                <center><h2>and many more!</h2></center>
+
 
             
             </div>
-            <LoginBottomer />
             
             
 
