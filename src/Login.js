@@ -31,6 +31,7 @@ function Login() {
       );
 
 
+
     const [state, dispatch] = useStateValue();
 
     const signIn = (e) => {
@@ -59,18 +60,11 @@ function Login() {
     return (
         <div className="login">
             <div className="loginpage">
-                <center><h1 className="login__header">MechLevels</h1></center>
-                <center><h3 className="login__desc">Find compensations of Mechanical Engineers from top companies</h3></center>
-                <center><button className="login__googlebutton" onClick={signIn}>Login with Google</button></center>
-
-            </div>
-            <div className="explanation">
-                <center><h2>Find compensations Mechanical Engineers earn from top companies such as...</h2></center>
-                <center><h2><AnimatedTypingComponent /></h2></center>
-                <center><h2>and many more!</h2></center>
+                <h1>MechLevels</h1>
+                <h3>Find compensations from top companies such as: <h2><AnimatedTypingComponent /></h2></h3>
+                <button onClick={signIn}>Login with Google</button>
 
 
-            
             </div>
             
             

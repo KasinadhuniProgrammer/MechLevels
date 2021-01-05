@@ -22,10 +22,20 @@ function Header() {
 
     return (
         <div className="header">
-            <center><h1 className="mechlevels__title">MechLevels</h1></center>
-            <center><h3 className="mechlevels__desc">Find Mechanical Engineers compensations from top companies!</h3></center>
-            <button className="logoutbutton" onClick={signOut}>Logout</button>
-            <center><input className="searchinput" placeholder="search"/></center>
+            <div classsName="header__left">
+                <h1>MechLevels</h1>
+
+            </div>
+            <div className="header__center">
+                <input placeholder="search a company"/> 
+
+            </div>
+            <div className="header__right">
+                <a className="headerleft__meettheteamA">Meet the MechLevels Team</a>
+                <a className="headerright__addA">Add Compensation</a>
+                <button className="logoutbutton" onClick={signOut}>Logout</button>
+
+            </div>
         </div>
     );
 

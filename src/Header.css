@@ -3,36 +3,58 @@
 
 .header {
     font-family: 'Montserrat', sans-serif;
-    background-color: #02203c;
-}
-
-.mechlevels__title {
+    background-color: #DA4D4A !important;
+    justify-content: space-between;
     color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 0; 
 }
 
-.mechlevels__desc {
-    color: white;
+
+.header__center > input {
+    background-color: #FD8583;
+    border: none; 
+    text-align: center; 
+    min-width: 35vw;
 }
 
-.logoutbutton {
-    background-color: #00f97c;
-    color: #02203c;
-    font-size: 25px;
+
+.headerleft__meettheteamA {
+    margin-right: 20px;
     cursor: pointer;
-    margin-bottom: 5px;
-    margin-left: 5px;
 }
 
-.logoutbutton:hover {
-    background-color: white;
-    color: #00f97c;
+.headerleft__meettheteamA:hover {
+    color: #FFF7F3;
     transition-duration: 0.5s;
 }
 
-.searchinput {
-    margin-bottom: 5px;
-    width: 300px;
-    background-color: transparent;
-    border: none;
-    color: #00f97c;
+.headerright__addA {
+    margin-right: 20px;
+    cursor: pointer;
 }
+
+.headerright__addA:hover {
+    color: #FFF7F3;
+    transition-duration: 0.5s;
+
+}
+
+.logoutbutton {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.logoutbutton:hover {
+    background-color: #DA4D4A;
+    color: white;
+    transition-duration: 0.5s;
+
+
+}
+
