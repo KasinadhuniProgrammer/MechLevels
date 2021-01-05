@@ -12,7 +12,7 @@ function Header() {
 
     const signOut = (e) => {
         auth.signOut().then(function() {
-            alert('signed out successfully');
+            alert('You are now being signed out of MechLevels');
             window.location.href = '/';
         }).catch(function(error) {
             alert('error signing out');
