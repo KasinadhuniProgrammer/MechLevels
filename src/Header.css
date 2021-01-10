@@ -11,6 +11,10 @@
     padding: 10px 0; 
 }
 
+.mechlevelsheader:hover {
+    color: #00f97c;
+    transition-duration: 0.5s;
+}
 
 .header__center > input {
     background-color: #FD8583;
@@ -26,7 +30,7 @@
 }
 
 .headerleft__meettheteamA:hover {
-    color: #FFF7F3;
+    color: #00f97c;
     transition-duration: 0.5s;
 }
 
@@ -36,7 +40,7 @@
 }
 
 .headerright__addA:hover {
-    color: #FFF7F3;
+    color: #00f97c;
     transition-duration: 0.5s;
 
 }

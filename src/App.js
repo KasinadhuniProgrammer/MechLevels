@@ -5,7 +5,7 @@ import Login from './Login';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom"; 
 import { useStateValue } from './StateProvider';
 import Header from './Header';
-
+import Defaults from './Defaults';
 function App() {
   const [{ user } , dispatch] = useStateValue(); 
 
@@ -18,7 +18,14 @@ function App() {
           <Login />
 
         ): (
-          <Header />
+    
+
+          <Route path="/">
+            <Header />
+            <Defaults />
+          </Route>
+          
+
 
         )}
       </Router>

@@ -23,7 +23,7 @@ function Header() {
     return (
         <div className="header">
             <div classsName="header__left">
-                <h1>MechLevels</h1>
+                <h1 className="mechlevelsheader">MechLevels</h1>
 
             </div>
             <div className="header__center">
