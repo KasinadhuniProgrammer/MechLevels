@@ -4,7 +4,10 @@ import './Defaults.css';
 function Defaults() {
     return (
         <div className="default">
-            <div className="default__tesla"></div>
+            <div className="default__tesla">
+
+            </div>
+            <div></div>
         </div>
     );
 }

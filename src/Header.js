@@ -26,10 +26,7 @@ function Header() {
                 <h1 className="mechlevelsheader">MechLevels</h1>
 
             </div>
-            <div className="header__center">
-                <input placeholder="search a company"/> 
-
-            </div>
+            
             <div className="header__right">
                 <a className="headerleft__meettheteamA">Meet the MechLevels Team</a>
                 <a className="headerright__addA">Add Compensation</a>
