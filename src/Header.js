@@ -22,17 +22,9 @@ function Header() {
 
     return (
         <div className="header">
-            <div classsName="header__left">
-                <h1 className="mechlevelsheader">MechLevels</h1>
-
-            </div>
-            
-            <div className="header__right">
-                <a className="headerleft__meettheteamA">Meet the MechLevels Team</a>
-                <a className="headerright__addA">Add Compensation</a>
-                <button className="logoutbutton" onClick={signOut}>Logout</button>
-
-            </div>
+            <center><h1 className="header__title">MECHLEVELS</h1></center>
+            <center><h3 className="header__desc">Find compensations from top companies</h3></center>
+            <center><button className="logout__button" onClick={signOut}>Logout</button></center>
         </div>
     );
 

@@ -6,59 +6,35 @@
     background-color: #DA4D4A !important;
     justify-content: space-between;
     color: white;
-    display: flex;
-    align-items: center;
     padding: 10px 0; 
 }
 
-.mechlevelsheader:hover {
-    color: #00f97c;
+.header__desc {
+    margin-top: 5px;
+}
+.header__title:hover {
+    color:#00f97c;
     transition-duration: 0.5s;
 }
 
-.header__center > input {
-    background-color: #FD8583;
-    border: none; 
-    text-align: center; 
-    min-width: 35vw;
-}
-
-
-.headerleft__meettheteamA {
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.headerleft__meettheteamA:hover {
-    color: #00f97c;
-    transition-duration: 0.5s;
-}
-
-.headerright__addA {
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.headerright__addA:hover {
-    color: #00f97c;
-    transition-duration: 0.5s;
-
-}
-
-.logoutbutton {
+.logout__button {
     background-color: black;
     color: white;
-    border: none;
-    font-size: 20px;
-    margin-right: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-top: 5px;
     cursor: pointer;
+    border: none;
 }
 
-.logoutbutton:hover {
-    background-color: #DA4D4A;
+.logout__button:hover {
+    background-color: #DA4D4A !important;
     color: white;
     transition-duration: 0.5s;
-
+    border: none;
 
 }
 
+@media screen and (max-width: 960px) {
+
+}
